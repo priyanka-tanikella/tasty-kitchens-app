@@ -1,0 +1,44 @@
+.order-placed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans';
+  padding: 20px;
+}
+
+.order-placed-image {
+  margin-top: 20px;
+  width: 64px;
+  height: 65px;
+}
+
+@media screen and (min-width: 992px) {
+  .order-placed-image {
+    margin-top: 80px;
+    width: 64px;
+    height: 65px;
+  }
+}
+
+.order-placed-heading {
+  color: #1e293b;
+}
+.order-placed-description {
+  color: #475569;
+  max-width: 450px;
+  text-align: center;
+}
+
+.order-placed-button {
+  padding: 8px 16px;
+  gap: 8px;
+  width: 153px;
+  height: 48px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: #f7931e;
+  border-radius: 12px;
+  margin-top: 10px;
+}

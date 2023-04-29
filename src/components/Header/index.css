@@ -1,0 +1,146 @@
+.navbar-mobile-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  background-color: #f8fafc;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-mobile-view {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-desktop-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  background-color: #f8fafc;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-desktop-view {
+    display: none;
+  }
+}
+
+.desktop-logo-img {
+}
+
+.title {
+  color: #f7931e;
+  font-family: 'DM Sans';
+  font-style: italic;
+  margin-left: 20px;
+}
+.home-cart-logout-container {
+  display: flex;
+  align-items: center;
+}
+.logout-button {
+  cursor: pointer;
+  outline: none;
+  padding: 8px 16px 8px 16px;
+  gap: 8px;
+  width: 73px;
+  height: 32px;
+  background: #f7931e;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #ffffff;
+  border: none;
+  margin-right: 90px;
+}
+.cart-active-link-page {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #f7931e;
+  margin-right: 20px;
+}
+.home-active-link-page {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #f7931e;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.cart-link-page {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #334155;
+  margin-right: 20px;
+}
+.home-link-page {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #334155;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.logo-and-title-container {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.mobile-title {
+  color: #f7931e;
+  font-family: 'DM Sans';
+  font-style: italic;
+  margin-left: 9px;
+}
+.mobile-logo-and-title-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.hamburger-btn {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.close-button {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.nav-item {
+  list-style: none;
+}
+.button {
+  outline: none;
+  border: none;
+  background: transparent;
+}

@@ -1,0 +1,122 @@
+.all-restaurants-list-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+.sort-by-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by-select {
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 12px;
+  outline: none;
+  cursor: pointer;
+}
+.select-option {
+  box-shadow: 0px 4px 8px rgba(96, 97, 112, 0.16);
+  border-radius: 12px;
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.restaurants-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  padding: 15px;
+}
+.all-restaurants-heading-and-sorting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+@media screen and (min-width: 992px) {
+  .all-restaurants-heading-and-sorting-container {
+    flex-direction: row;
+    margin-left: 23px;
+    margin-right: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+}
+.restaurants-view-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 20px;
+}
+@media screen and (min-width: 992px) {
+  .home-title {
+    font-size: 30px;
+  }
+}
+
+.home-description {
+  font-size: 12px;
+}
+@media screen and (min-width: 992px) {
+  .home-description {
+    font-size: 14px;
+  }
+}
+.line {
+  color: #cbd2d9;
+  width: 93%;
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-button {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #334155;
+  margin: 5px;
+}
+.active-page {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #334155;
+  margin-left: 2px;
+}
+.of-and-total-pages {
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #334155;
+  margin: 3px;
+}
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
