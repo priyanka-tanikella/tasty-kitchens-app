@@ -107,7 +107,7 @@ class LoginForm extends Component {
             className="desktop-logo-img"
           />
           <h1 className="title">Tasty Kitchens</h1>
-          <h2 className="login-desktop-heading">Login</h2>
+
           {this.renderUsernameInput()}
           {this.renderPasswordInput()}
           {showSubmitError && <p className="error-msg">*{errorMsg}</p>}
