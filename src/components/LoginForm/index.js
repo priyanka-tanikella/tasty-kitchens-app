@@ -20,7 +20,6 @@ class LoginForm extends Component {
   onSubmitSuccess = jwtToken => {
     const {history} = this.props
     Cookies.set('jwt_token', jwtToken, {expires: 30})
-
     history.replace('/')
   }
 
@@ -98,9 +97,9 @@ class LoginForm extends Component {
         <img
           src="https://res.cloudinary.com/denbtnhco/image/upload/v1681632303/Rectangle_1456_solpxs.png"
           alt="website login"
-          className="login-mobile-img"
+          className="login-img"
         />
-        <h2 className="login-mobile-heading">Login</h2>
+        <h3 className="login-mobile-heading">Login</h3>
         <form className="form-container" onSubmit={this.onSubmitForm}>
           <img
             src="https://res.cloudinary.com/denbtnhco/image/upload/v1681632796/Vectorlogo_prhtzg.png"
@@ -116,12 +115,6 @@ class LoginForm extends Component {
             Login
           </button>
         </form>
-
-        <img
-          src="https://res.cloudinary.com/denbtnhco/image/upload/v1681632303/Rectangle_1456_solpxs.png"
-          alt="website login"
-          className="login-desktop-img"
-        />
       </div>
     )
   }

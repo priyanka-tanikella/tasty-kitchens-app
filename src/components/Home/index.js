@@ -5,11 +5,15 @@ import Footer from '../Footer'
 
 import OffersCarousel from '../OffersCarousel'
 
+import './index.css'
+
 const Home = () => (
   <>
     <Header />
     <OffersCarousel />
-    <AllRestaurantsSection />
+    <div className="home-container">
+      <AllRestaurantsSection />
+    </div>
     <Footer />
   </>
 )

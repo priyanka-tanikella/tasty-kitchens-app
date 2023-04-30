@@ -53,17 +53,21 @@ class OffersCarousel extends Component {
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
+      speed: 500,
+      autoplay: true,
+      infinite: true,
+      autoplaySpeed: 2000,
     }
     const {offersList, isLoading} = this.state
     console.log(offersList)
     return isLoading ? (
       this.renderLoadingView()
     ) : (
-      <div className="offers-slider-container">
-        <ul>
+      <div className="carousel-container">
+        <ul className="offers-slider-container">
           <Slider {...settings}>
             {offersList.map(eachUrl => (
-              <li className="list-item" key={eachUrl.id}>
+              <li className="offer-item" key={eachUrl.id}>
                 <img
                   src={eachUrl.imageUrl}
                   alt="offer"

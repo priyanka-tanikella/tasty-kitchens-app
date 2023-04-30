@@ -1,13 +1,28 @@
 .offers-slider-container {
-  padding: 15px;
+  padding: 20px;
   width: 100%;
+  outline: none;
 }
 @media screen and (min-width: 992px) {
   .offers-slider-container {
-    padding: 50px;
     width: 100%;
   }
 }
 .offer-image {
-  width: 30%;
+  width: 95%;
+}
+.offer-item {
+  list-style-type: none;
+  margin: 10px;
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .carousel-container {
+    display: flex;
+    margin-left: 38px;
+    justify-content: center;
+  }
 }

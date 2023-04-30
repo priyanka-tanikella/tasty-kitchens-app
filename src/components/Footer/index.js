@@ -18,9 +18,9 @@ const Footer = () => (
       <h2 className="footer-app-title">Tasty Kitchens</h2>
     </div>
     <p className="footer-caption-text">
-      The only thing we are serious about is food. Contact us on
+      The only thing we are serious about is food. Contact us on.
     </p>
-    <p className="footer-caption-text">Contact Us</p>
+
     <div className="social-media-icons-box">
       <FaInstagram
         className="social-media-icon"

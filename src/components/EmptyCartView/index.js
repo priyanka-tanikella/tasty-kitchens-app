@@ -11,7 +11,7 @@ const EmptyCartView = () => (
     />
     <h1 className="empty-cart-heading"> No Order Yet!</h1>
     <p className="empty-cart-description">
-      Your cart is empty. Add something from the menu."
+      Your cart is empty. Add something from the menu.
     </p>
     <Link to="/">
       <button type="button" className="order-now-button">

@@ -99,7 +99,8 @@ class AllRestaurantsSection extends Component {
     const {activeOptionId} = this.state
     return (
       <div className="sort-by-container">
-        <BsFilterRight className="sort-by-icon" />
+        <BsFilterRight size="20" className="sort-by-icon" />
+        <p className="sort-by">Sort by</p>
         <select
           className="sort-by-select"
           value={activeOptionId}
@@ -111,7 +112,6 @@ class AllRestaurantsSection extends Component {
               value={eachOption.value}
               className="select-option"
             >
-              <p>Sort by </p>
               {eachOption.displayText}
             </option>
           ))}

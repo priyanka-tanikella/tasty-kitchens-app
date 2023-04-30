@@ -6,7 +6,7 @@
 .food-item {
   list-style-type: none;
   margin: 20px;
-  width: 460px;
+  width: 400px;
 }
 .food-card-container {
   display: flex;
@@ -64,7 +64,6 @@
 .food-image {
   width: 250px;
   height: 150px;
-
   border-radius: 8px;
 }
 .add-button {

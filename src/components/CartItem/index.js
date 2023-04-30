@@ -58,9 +58,7 @@ const CartItem = props => (
             </div>
           </div>
           <div className="price">
-            <p className="total-price" data-testid="total-price">
-              {totalPrice}.00{' '}
-            </p>
+            <p className="total-price">{totalPrice}.00 </p>
           </div>
           <button
             type="button"

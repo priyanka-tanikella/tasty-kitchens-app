@@ -40,7 +40,7 @@ class RestaurantDetails extends Component {
         costForTwo: data.cost_for_two,
         cuisine: data.cuisine,
         id: data.id,
-        imageUrl: data.image_url,
+        restaurantImageUrl: data.image_url,
         itemsCount: data.items_count,
         location: data.location,
         name: data.name,
@@ -66,7 +66,7 @@ class RestaurantDetails extends Component {
     const {
       costForTwo,
       cuisine,
-      imageUrl,
+      restaurantImageUrl,
       location,
       name,
       rating,
@@ -78,7 +78,7 @@ class RestaurantDetails extends Component {
           <div className="restaurant-image-container">
             <div>
               <img
-                src={imageUrl}
+                src={restaurantImageUrl}
                 alt="restaurant"
                 className="restaurant-details-image"
               />
