@@ -52,7 +52,7 @@ class RestaurantDetails extends Component {
 
       const foodItemsUpdatedData = data.food_items.map(eachItem => ({
         id: eachItem.id,
-        restaurantImageUrl: eachItem.image_url,
+        imageUrl: eachItem.image_url,
         name: eachItem.name,
         cost: eachItem.cost,
         rating: eachItem.rating,
