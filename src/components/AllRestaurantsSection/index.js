@@ -168,7 +168,7 @@ class AllRestaurantsSection extends Component {
           <button
             type="button"
             className="pagination-button"
-            testid="pagination-left-button"
+            testid="pagination-right-button"
             onClick={this.onClickRightButton}
           >
             <RiArrowDropRightLine size="30" />
