@@ -11,7 +11,8 @@ const OrderPlacedView = () => (
     />
     <h1 className="order-placed-heading"> Payment Successful</h1>
     <p className="order-placed-description">
-      Thank you for ordering Your payment is successfully completed.
+      Thank you for ordering <br />
+      Your payment is successfully completed.
     </p>
     <Link to="/" className="link-item">
       <button type="button" className="order-placed-button">

@@ -9,7 +9,6 @@
 }
 
 .empty-cart-image {
-  margin-top: 90px;
   width: 203px;
   height: 175px;
 }
@@ -24,7 +23,14 @@
 
 .empty-cart-heading {
   color: #1e293b;
+  font-size: 25px;
 }
+@media screen and (min-width: 992px) {
+  .empty-cart-heading {
+    font-size: 40px;
+  }
+}
+
 .empty-cart-description {
   color: #475569;
   max-width: 450px;

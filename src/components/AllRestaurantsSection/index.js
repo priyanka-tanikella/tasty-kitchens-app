@@ -121,7 +121,7 @@ class AllRestaurantsSection extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loader-container" testid="restaurants-list-loader">
+    <div className="loader-container" data-testid="restaurants-list-loader">
       <Loader type="Oval" color="#f7931e" height="50" width="50" />
     </div>
   )
@@ -156,19 +156,19 @@ class AllRestaurantsSection extends Component {
           <button
             type="button"
             className="pagination-button"
-            testid="pagination-left-button"
+            data-testid="pagination-left-button"
             onClick={this.onClickLeftButton}
           >
             <RiArrowDropLeftLine size="30" />
           </button>
-          <p className="active-page" testid="active-page-number">
+          <p className="active-page" data-testid="active-page-number">
             {activePage}
           </p>
           <p className="of-and-total-pages"> of {totalPages}</p>
           <button
             type="button"
             className="pagination-button"
-            testid="pagination-right-button"
+            data-testid="pagination-right-button"
             onClick={this.onClickRightButton}
           >
             <RiArrowDropRightLine size="30" />

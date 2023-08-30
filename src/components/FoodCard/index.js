@@ -1,5 +1,7 @@
 import {AiFillStar} from 'react-icons/ai'
 
+import {BiRupee} from 'react-icons/bi'
+
 import CartContext from '../../context/CartContext'
 
 import Counter from '../Counter'
@@ -22,12 +24,15 @@ const FoodCard = props => {
         const quantity = getQuantityOfItem(id)
 
         return (
-          <li className="food-item" testid="foodItem">
+          <li className="food-item" data-testid="foodItem">
             <div className="food-card-container">
               <img src={imageUrl} alt="restaurant" className="food-image" />
               <div className="food-details">
                 <h1 className="food-name">{name}</h1>
-                <p className="food-cost">{cost}</p>
+                <div className="price-icon-container">
+                  <BiRupee size={16} />
+                  <p className="food-cost">{cost}</p>
+                </div>
                 <div className="star-rating">
                   <AiFillStar color="gold" />
                   <p className="rating">{rating}</p>
@@ -41,7 +46,9 @@ const FoodCard = props => {
                     ADD
                   </button>
                 ) : (
-                  <Counter quantity={quantity} id={id} />
+                  <div className="food-cart-counter">
+                    <Counter quantity={quantity} id={id} />
+                  </div>
                 )}
               </div>
             </div>

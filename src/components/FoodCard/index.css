@@ -1,54 +1,57 @@
-:root {
-  --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .food-item {
   list-style-type: none;
-  margin: 20px;
-  width: 400px;
+  margin: 10px;
+  width: 300px;
+}
+@media screen and (min-width: 768px) {
+  .food-item {
+    width: 400px;
+  }
 }
 .food-card-container {
   display: flex;
-
   align-items: center;
 }
 .food-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .food-name {
   color: #334155;
   font-family: 'DM Sans';
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
-
-  margin-top: 0px;
+}
+@media screen and (min-width: 992px) {
+  .food-name {
+    font-size: 18px;
+  }
 }
 .food-cost {
   color: #64748b;
   font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 0px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 0;
 }
 .star-rating {
   display: flex;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 .rating {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  line-height: 15px;
+  line-height: 1;
   color: #1e293b;
   margin-left: 3px;
 }
@@ -62,10 +65,20 @@
   margin-top: 0px;
 }
 .food-image {
-  width: 250px;
-  height: 150px;
+  width: 170px;
+  height: 130px;
+  left: 165px;
+  top: 248px;
   border-radius: 8px;
 }
+@media screen and (min-width: 768px) {
+  .food-image {
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+  }
+}
+
 .add-button {
   font-family: 'Inter';
   font-style: normal;
@@ -80,5 +93,13 @@
   outline: none;
   cursor: pointer;
   margin-left: 5px;
-  padding: 10px 5px 10px 5px;
+  margin-top: 0;
+}
+.price-icon-container {
+  display: flex;
+  align-items: center;
+}
+.food-cart-counter {
+  margin-top: 0;
+  padding-top: 0;
 }

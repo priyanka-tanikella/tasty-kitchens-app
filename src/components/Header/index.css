@@ -20,6 +20,7 @@
 .mobile-menu-container {
   display: flex;
   align-items: center;
+  padding-left: 0%;
 }
 
 .navbar-desktop-view {
@@ -83,7 +84,7 @@
   color: #ffffff;
   border: none;
   margin-right: 40px;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .cart-active-link-page {
   font-family: 'DM Sans';
@@ -92,7 +93,6 @@
   font-size: 16px;
   line-height: 26px;
   color: #f7931e;
-  margin-right: 20px;
 }
 .home-active-link-page {
   font-family: 'DM Sans';
@@ -111,7 +111,6 @@
   font-size: 16px;
   line-height: 26px;
   color: #334155;
-  margin-right: 20px;
 }
 .home-link-page {
   font-family: 'DM Sans';
@@ -123,6 +122,11 @@
   margin-right: 20px;
   margin-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  .home-link-page {
+    margin-right: 35px;
+  }
+}
 .logo-and-title-container {
   display: flex;
   align-items: center;
@@ -133,7 +137,7 @@
   color: #f7931e;
   font-family: 'DM Sans';
   font-style: italic;
-  margin-left: 9px;
+  margin-left: 5px;
 }
 .mobile-logo-and-title-container {
   display: flex;
@@ -146,7 +150,7 @@
   background: transparent;
   border: none;
 }
-.close-button {
+.header-close-button {
   outline: none;
   cursor: pointer;
   background: transparent;
@@ -155,7 +159,8 @@
 
 .cross-icon {
   margin-top: 30px;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-bottom: 8px;
 }
 .nav-item {
   list-style: none;
@@ -164,4 +169,29 @@
   outline: none;
   border: none;
   background: transparent;
+}
+.cart-count-badge {
+  background-color: #bfdbfe;
+  color: #0967d2;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  margin-right: 18px;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-count-badge {
+    background-color: #e6f6ff;
+    margin-left: 2px;
+  }
+}
+.cart {
+  display: flex;
+  align-items: center;
 }

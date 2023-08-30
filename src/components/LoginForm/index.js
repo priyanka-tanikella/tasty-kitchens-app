@@ -7,7 +7,13 @@ import Cookies from 'js-cookie'
 import './index.css'
 
 class LoginForm extends Component {
-  state = {username: '', password: '', showSubmitError: false, errorMsg: ''}
+  state = {
+    username: '',
+    password: '',
+    showPassword: false,
+    showSubmitError: false,
+    errorMsg: '',
+  }
 
   onChangeUsername = event => {
     this.setState({username: event.target.value})
@@ -15,6 +21,10 @@ class LoginForm extends Component {
 
   onChangePassword = event => {
     this.setState({password: event.target.value})
+  }
+
+  onChangeShowPassword = () => {
+    this.setState(prevState => ({showPassword: !prevState.showPassword}))
   }
 
   onSubmitSuccess = jwtToken => {
@@ -66,14 +76,15 @@ class LoginForm extends Component {
   }
 
   renderPasswordInput = () => {
-    const {password} = this.state
+    const {password, showPassword} = this.state
+    const inputType = showPassword ? 'text' : 'password'
     return (
       <>
         <label htmlFor="password" className="label">
           PASSWORD
         </label>
         <input
-          type="password"
+          type={inputType}
           onChange={this.onChangePassword}
           id="password"
           value={password}
@@ -110,6 +121,17 @@ class LoginForm extends Component {
 
           {this.renderUsernameInput()}
           {this.renderPasswordInput()}
+          <div className="show-password-container">
+            <input
+              type="checkbox"
+              className="show-password"
+              id="show-password"
+              onChange={this.onChangeShowPassword}
+            />
+            <label className="show-password-label" htmlFor="show-password">
+              Show Password
+            </label>
+          </div>
           {showSubmitError && <p className="error-msg">*{errorMsg}</p>}
           <button type="submit" className="login-btn">
             Login

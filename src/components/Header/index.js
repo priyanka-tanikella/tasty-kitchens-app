@@ -6,6 +6,8 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 import Cookies from 'js-cookie'
 import {Component} from 'react'
 
+import CartContext from '../../context/CartContext'
+
 import './index.css'
 
 class Header extends Component {
@@ -24,6 +26,19 @@ class Header extends Component {
   onClickCloseBtn = () => {
     this.setState({showMenu: false})
   }
+
+  renderCartListCount = () => (
+    <CartContext.Consumer>
+      {value => {
+        const {cartList} = value
+        const cartListCount = cartList.length
+
+        return cartListCount > 0 ? (
+          <span className="cart-count-badge">{cartListCount}</span>
+        ) : null
+      }}
+    </CartContext.Consumer>
+  )
 
   render() {
     const {showMenu} = this.state
@@ -66,10 +81,11 @@ class Header extends Component {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item cart">
                 <Link to="/cart" className="link-item">
                   <p className={cartClassName}> Cart</p>
                 </Link>
+                {this.renderCartListCount()}
               </li>
 
               <li className="nav-item">
@@ -96,10 +112,11 @@ class Header extends Component {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
-                    <Link to="/cart" className="link-item">
+                  <li className="nav-item cart">
+                    <Link to="/cart" className="link-item ">
                       <p className={cartClassName}> Cart</p>
                     </Link>
+                    {this.renderCartListCount()}
                   </li>
                 </ul>
                 <button
@@ -113,7 +130,7 @@ class Header extends Component {
               <div>
                 <button
                   type="button"
-                  className="close-button"
+                  className="header-close-button"
                   onClick={this.onClickCloseBtn}
                 >
                   <AiFillCloseCircle size="25" className="cross-icon" />

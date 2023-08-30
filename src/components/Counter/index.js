@@ -32,18 +32,18 @@ const Counter = props => {
         return (
           <div className="counter-container">
             <button
-              testid="decrement-count"
+              data-testid="decrement-count"
               type="button"
               onClick={onClickDecrement}
               className="button"
             >
               -
             </button>
-            <div className="quantity-container" testid="active-count">
+            <div className="quantity-container" data-testid="active-count">
               {quantity}
             </div>
             <button
-              testid="increment-count"
+              data-testid="increment-count"
               type="button"
               onClick={onClickIncrement}
               className="button"

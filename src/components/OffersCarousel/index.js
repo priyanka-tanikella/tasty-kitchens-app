@@ -43,7 +43,7 @@ class OffersCarousel extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loader-container" testid="restaurants-offers-loader">
+    <div className="loader-container" data-testid="restaurants-offers-loader">
       <Loader type="Oval" color="#f7931e" height="50" width="50" />
     </div>
   )

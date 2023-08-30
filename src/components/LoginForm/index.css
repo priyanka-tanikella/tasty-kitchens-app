@@ -134,3 +134,14 @@
 .error-msg {
   color: #ef4444;
 }
+.show-password-container {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+}
+.show-password-label {
+  font-family: 'Roboto';
+  color: #475569;
+  font-weight: 500;
+  font-size: 14px;
+}
